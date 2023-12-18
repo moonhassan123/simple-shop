@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './component/Navbar/Navbar'
 import Home from './component/home/home'
 import { Outlet } from 'react-router-dom'
+import Buttom from './component/Navbar/Buttom'
+import Slider from './component/Navbar/Slider'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +15,10 @@ function App() {
     <>
     
     <Home></Home>
+    
+    
+   
+    
     
     
       

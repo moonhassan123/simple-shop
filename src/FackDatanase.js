@@ -38,15 +38,15 @@ function addToCard(id){
 function removeitem(id){
     
 
-//     const storedCard =  localStorage.getItem("shopping-cart");
-//     if(storedCard){
-//         let shoppingCard = JSON.parse(storedCard)
-//         delete shoppingCard[id]
-//         // for(id in shoppingCard){
-//         //     delete shoppingCard[id]
-//         // }
-//         localStorage.removeItem("shopping-cart",JSON.stringify(shoppingCard))
-//     }
+    const storedCard =  localStorage.getItem("shopping-cart");
+    if(storedCard){
+        let shoppingCard = JSON.parse(storedCard)
+        delete shoppingCard[id]
+        // for(id in shoppingCard){
+        //     delete shoppingCard[id]
+        // }
+        localStorage.removeItem("shopping-cart",JSON.stringify(shoppingCard))
+    }
 
  }
 export {addToCard , removeitem};

@@ -1,6 +1,6 @@
 import React from "react";
 import { addToCard ,removeitem } from "../../FackDatanase";
-import { removeItem } from "localforage";
+
  
 const ProductCard  = ({product}) => {
 
@@ -14,7 +14,7 @@ const ProductCard  = ({product}) => {
 
     // remove frm card 
     function removeFromCardHandler(id){
-      removeItem (id);
+      removeitem (id);
     }
     return (
         <div
@@ -27,7 +27,7 @@ const ProductCard  = ({product}) => {
          className=" bg-lime-300 px-3 rounded-md ">Add to cart
          </button>
          <button onClick={() => {
-          removeItem(product.id);
+          removeFromCardHandler(product.id);
 
          }} 
         className=" bg-blue-600  rounded-md px-7 mt-2">Remove - Card</button>

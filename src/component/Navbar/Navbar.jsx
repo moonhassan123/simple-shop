@@ -7,11 +7,12 @@ const Navbar = () => {
     const[isOpen,setIsOpen]=useState(false)
     const navbarItems = [
         
-        {id : 1, name:"Home", path: "/"},
-        {id : 2, name:"About", path: "/about"},
+        {id : 1, name:"Home", path: "/home"},
+        //  {id : 1, name:"Home", path: "/"},
+        {id : 2, name:"Shop", path: "/Shop"},
         {id : 3, name:"Services", path: "/services"},
         {id : 4, name:"Contact", path: "/contact"},
-        {id : 4, name:"Review", path: "/review"},
+        {id : 4, name:"Login", path: "/Login"},
     ];
 
     
