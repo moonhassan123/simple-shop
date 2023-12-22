@@ -8,7 +8,7 @@ const Navbar = () => {
     const navbarItems = [
         
         {id : 1, name:"Home", path: "/home"},
-          {id : 1, name:"Home", path: "/"},
+        //   {id : 1, name:"Home", path: "/"},
         {id : 2, name:"Shop", path: "/Shop"},
         {id : 3, name:"Services", path: "/services"},
         {id : 4, name:"Contact", path: "/contact"},
@@ -17,7 +17,7 @@ const Navbar = () => {
 
     
     return (
-        <nav className=" bg-red-600">
+        <nav className=" bg-red-600 rounded-2xl ">
             <div
                 onClick={() => {
                     setIsOpen(!isOpen)

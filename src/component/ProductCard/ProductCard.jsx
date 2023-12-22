@@ -1,32 +1,33 @@
 import React from "react";
-import { addToCard ,removeitem } from "../../FackDatanase";
+import {removeitem } from "../../FackDatanase";
 
  
-const ProductCard  = ({product}) => {
+const ProductCard  = ({product,addTocartHandler}) => {
+  // console.log(props);
+  // const{product,addTocartHandler} = props
 
 
 
-  // data add function
-  const addTocartHandler =(id)=>{
-
-    addToCard(id);
-    };
+  
 
     // remove frm card 
     function removeFromCardHandler(id){
-      removeitem (id);
+      removeitem   (id);
     }
     return (
         <div
         className="border drop-shadow-2xl border-red-400 rounded-lg text-center">
          <img src={product.img} alt="" />
+
          <h1>{product.name}</h1> 
-       
-       <button onClick={ () => {addTocartHandler(product.id);
+       <h3>price : {product.price}</h3>
+       <button 
+       onClick={ () => {addTocartHandler(product);
         }}
          className=" bg-lime-300 px-3 rounded-md ">Add to cart
          </button>
-         <button onClick={() => {
+         <button 
+         onClick={() => {
           removeFromCardHandler(product.id);
 
          }} 
