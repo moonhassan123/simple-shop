@@ -31,11 +31,11 @@ const Navbar = () => {
                 )}
             </div>
             <ul
-                className={` md:flex justify-center gap-10 font-medium absolute md:static  
+                className={` md:flex justify-center gap-10 font-medium absolute md:static   
              ${isOpen ? "top-10" : "-top-40"}`}
             />
 
-            <div className="bg-blue-950 p-3">
+            <div className="bg-blue-950 p-3 w-full fixed z-10">
                 <div
                     className=" md:hidden"
                     onClick={() => {

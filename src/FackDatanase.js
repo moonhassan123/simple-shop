@@ -1,16 +1,6 @@
 function addToCard(id){
-    let shoppingCard ;
-    // get data from localStorage
-
-  const storedCard =  localStorage.getItem("shopping-cart")
-
-//   check if data exist
-  if(storedCard ){
-    shoppingCard=JSON.parse (storedCard);
-  }else{
-    shoppingCard = {};
-  }
-
+   
+  let shoppingCard = getShoppingCard ()
 
 
     let quantity = shoppingCard [id]
@@ -49,4 +39,18 @@ function removeitem(id){
     }
 
  }
-export {addToCard , removeitem};
+ const getShoppingCard  = ()=> {
+  let shoppingCard ;
+  // get data from localStorage
+
+const storedCard =  localStorage.getItem("shopping-cart")
+
+//   check if data exist
+if(storedCard ){
+  shoppingCard=JSON.parse (storedCard);
+}else{
+  shoppingCard = {};
+}
+return shoppingCard;
+ }
+export {addToCard , removeitem , getShoppingCard};

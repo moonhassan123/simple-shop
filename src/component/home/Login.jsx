@@ -4,7 +4,7 @@ import { Button, Card, Checkbox, Label, TextInput } from 'flowbite-react';
 export class Login extends Component {
   render() {
     return (
-      <div className=' p-10 bg-slate-400'>
+      <div className=' p-10 bg-slate-400 mt-[88px]'>
          <Card className="max-w-sm">
       <form className="flex flex-col gap-4">
         <div>
