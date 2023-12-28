@@ -42,8 +42,8 @@ const Buttom = () =>{
 
                 </div>
                 <div className=" bg-slate-800 flex p-3 text-zinc-50 ">
-                    <h1>©2023 - All rights reserved | Xeert</h1>
-                    <h1 className=" ml-80 ">Bkash | Rocket</h1>
+                    <h1>© 2023 -- All rights reserved \|/ Xeert</h1>
+                    <h1 className=" ml-80 ">Bkash \|/ Rocket</h1>
                 </div>
 
 

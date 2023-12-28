@@ -35,7 +35,7 @@ const Navbar = () => {
              ${isOpen ? "top-10" : "-top-40"}`}
             />
 
-            <div className="bg-blue-950 p-3 w-full fixed z-10">
+            <div className="bg-blue-950 p-3 w-full fixed top-0 z-10">
                 <div
                     className=" md:hidden"
                     onClick={() => {
