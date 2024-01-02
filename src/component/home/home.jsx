@@ -1,6 +1,6 @@
 import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
-import Products from "../products/products";
+import Products from "../Products/Products";
 import Buttom from "../Navbar/Buttom";
 import Slider from "../Navbar/Slider";
 import Cart from "../Cart/Cart";
